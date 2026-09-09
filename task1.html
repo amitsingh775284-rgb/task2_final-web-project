@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Final Project</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Web Developer</span></h1>
+            <p>Welcome to my 6-week internship final capstone project.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate web development intern skilled in HTML, CSS, JavaScript, Git, and responsive web design. This website showcases my knowledge acquired during the internship program.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container bg-light">
+        <h2>Skills Learned</h2>
+        <div class="skills-grid">
+            <div class="card">
+                <h3>HTML5</h3>
+                <p>Semantic structure, forms, accessibility, and clean markup.</p>
+            </div>
+            <div class="card">
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid layout, animations, and responsive media queries.</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>DOM manipulation, event handling, dynamic styling, and logic building.</p>
+            </div>
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Version control, commit history, branch management, and deployment via GitHub Pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Counter Feature -->
+    <section class="container text-center">
+        <h2>Interactive Demo</h2>
+        <div class="counter-box">
+            <p id="counter-value">0</p>
+            <button id="increment-btn" class="btn">Click Me!</button>
+            <button id="reset-btn" class="btn btn-secondary">Reset</button>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-status" class="form-status"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Internship Final Project. Built with HTML, CSS, and JS.</p>
+    </footer>
+
+    <script src="task1.js"></script>
+</body>
+</html>
